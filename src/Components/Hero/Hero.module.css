@@ -1,0 +1,126 @@
+.hero{
+  padding:120px 20px;
+  text-align:center;
+  font-family:"Inter",sans-serif;
+
+  background: linear-gradient(to right,#f8f9ff,#eef2ff);
+}
+
+/* subtitle */
+.subtitle{
+  font-size:0.9rem;
+  letter-spacing:2px;
+  color:#6b7280;
+  margin-bottom:15px;
+}
+
+/* main title */
+.title{
+  font-family:"Poppins",sans-serif;
+  font-size:3rem;
+  font-weight:700;
+  margin-bottom:15px;
+  color:#1f2937;
+}
+
+/* description */
+.tagline{
+  max-width:600px;
+  margin:0 auto 30px;
+  font-size:1.05rem;
+  color:#4b5563;
+  line-height:1.6;
+}
+
+/* buttons */
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+/* primary button */
+.primaryBtn{
+  padding:12px 28px;
+  border:none;
+  background:#ff6600;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+/* secondary button */
+.secondaryBtn{
+  padding:12px 28px;
+  border:1px solid #1f2937;
+  background:transparent;
+  color:#1f2937;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+/* features */
+.features{
+  font-size:0.9rem;
+  color:#6b7280;
+}
+
+/* ---------------- */
+/* TABLET */
+/* ---------------- */
+
+@media (max-width:1024px){
+
+  .hero{
+    padding:100px 20px;
+    height:90vh;
+  }
+
+  .title{
+    font-size:2.5rem;
+  }
+
+  .tagline{
+    font-size:1rem;
+    max-width:500px;
+  }
+
+}
+
+/* ---------------- */
+/* MOBILE */
+/* ---------------- */
+
+@media (max-width:768px){
+
+  .hero{
+    padding:80px 20px;
+  }
+
+  .title{
+    font-size:2rem;
+  }
+
+  .tagline{
+    font-size:0.95rem;
+    max-width:90%;
+  }
+
+  .buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .primaryBtn,
+  .secondaryBtn{
+    width:180px;
+  }
+
+  .features{
+    font-size:0.85rem;
+  }
+
+}
