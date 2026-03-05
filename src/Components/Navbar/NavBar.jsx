@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 const NavBar = () => {
   const menuRef = useRef(null)
   const [menuOpen, setMenuOpen] = useState(false);
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
