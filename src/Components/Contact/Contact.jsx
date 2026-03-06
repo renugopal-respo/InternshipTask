@@ -27,7 +27,7 @@ export default function Contact(){
     setTimeout(()=>{
       setSuccess(false)
       setFormData({name:"",email:"",message:""})
-    },300000)
+    },3000)
   }
 
   return(
@@ -80,7 +80,7 @@ export default function Contact(){
           />
         </div>
 
-        <button type="submit">Send Messag →</button>
+        <button type="submit">Send Message →</button>
 
       </form>
 
