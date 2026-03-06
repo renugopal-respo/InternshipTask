@@ -1,7 +1,7 @@
 import React, { useState,useRef,useEffect } from 'react'
 import Styles from './NavBar.module.css'
 import { NavLink } from 'react-router-dom'
-
+import { FaBars, FaTimes } from "react-icons/fa";
 const NavBar = () => {
   const menuRef = useRef(null)
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +28,7 @@ const NavBar = () => {
         className={Styles.hamburger}
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        ☰
+        {menuOpen ? <FaTimes/>: <FaBars/>}
       </div>
 
       {/* Links */}
